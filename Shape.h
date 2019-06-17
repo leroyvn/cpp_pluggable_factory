@@ -1,7 +1,3 @@
-//
-// Created by Vincent Leroy on 2019-06-16.
-//
-
 #ifndef CPP_PLUGGABLE_FACTORY_SHAPE_H
 #define CPP_PLUGGABLE_FACTORY_SHAPE_H
 
