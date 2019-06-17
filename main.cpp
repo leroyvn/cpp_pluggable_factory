@@ -1,35 +1,36 @@
+//=======================================================================
+// File:   factory-pattern1.cpp
+// Brief:  Factory design pattern with self registering of derived classes.
+// Author: Caio Rodrigues
+// URL: https://rextester.com/ILKI85678
+//=======================================================================
+
 #include <iostream>
-#include <sstream>
+#include <string>
+#include <map>
 #include <memory>
 
-#include "ShapeFactory.h"
+#include "Factory.h"
 
 int main() {
-    std::cout << "Pluggable Factory Test" << std::endl
-              << std::endl;
 
-    std::cout << "Registered classes:" << std::endl;
-    ShapeFactory::show_registered();
-    std::cout << std::endl;
+    Factory::showClasses();
+    std::cout << "\n";
+    std::unique_ptr<Base> objBase = Factory::makeUnique("Base");
+    if (!objBase)
+        std::cout << " ==> Error: object not found in factory" << '\n';
+    else
+        std::cout << " type of objBase = " << objBase->getType() << "\n";
 
-    {
-        std::cout << "Creating a Circle instance" << std::endl;
-        std::stringstream s;
-        s << "Circle";
-        Shape *shape = ShapeFactory::new_shape(s);
-        shape->do_something();
-        delete shape;
-    }
+    std::unique_ptr<Base> objDA = Factory::makeUnique("DerivedA");
+    std::cout << " type of derivedA = " << objDA->getType() << "\n";
 
-    std::cout << std::endl;
+    std::unique_ptr<Base> objDB = Factory::makeUnique("DerivedB");
+    std::cout << " type of derivedB = " << objDB->getType() << "\n";
 
-    {
-        std::cout << "Creating a Rectangle instance" << std::endl;
-        std::stringstream s;
-        s << "Rectangle";
-        std::unique_ptr<Shape> shape = ShapeFactory::new_shape_unique(s);
-        shape->do_something();
-    }
+    std::unique_ptr<Base> objDC = Factory::makeUnique("Derived-error");
+    if (!objDC)
+        std::cout << " ==> Error: object not found in factory" << '\n';
 
     return 0;
 }

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="cpp_pluggable_factory" targetName="libshape" />
-      <config projectName="cpp_pluggable_factory" targetName="cpp_pluggable_factory" />
+      <config projectName="cpp_factory" targetName="cpp_factory" />
+      <config projectName="cpp_factory" targetName="libbase" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -16,19 +16,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22c3839b-2397-41da-a400-898a80ceeab0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rectangle.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Circle.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Circle.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Circle.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CircleMaker.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CircleMaker.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shape.h" beforeDir="false" afterPath="$PROJECT_DIR$/Shape.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShapeFactory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ShapeFactory.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShapeFactory.h" beforeDir="false" afterPath="$PROJECT_DIR$/ShapeFactory.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShapeMaker.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShapeMaker.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Circle.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rectangle.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shape.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShapeFactory.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShapeFactory.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -44,14 +37,14 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Release" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="34" column="13" lean-forward="true" selection-start-line="14" selection-end-line="34" selection-end-column="13" />
+            <state relative-caret-position="703">
+              <caret line="37" column="12" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -60,58 +53,7 @@
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="665">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ShapeFactory.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-              <folding>
-                <element signature="e#91#109#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ShapeFactory.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Circle.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="32" column="49" lean-forward="true" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Rectangle.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
             </state>
           </provider>
         </entry>
@@ -161,7 +103,7 @@
         <subPane>
           <expand>
             <path>
-              <item name="cpp_pluggable_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cpp_factory" type="b2602c69:ProjectViewProjectNode" />
               <item name="cpp_pluggable_factory" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -190,20 +132,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="CMake Application.cpp_pluggable_factory">
-    <configuration name="cpp_pluggable_factory" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cpp_pluggable_factory" TARGET_NAME="cpp_pluggable_factory" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cpp_pluggable_factory" RUN_TARGET_NAME="cpp_pluggable_factory">
+  <component name="RunManager" selected="CMake Application.cpp_factory">
+    <configuration name="cpp_factory" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cpp_factory" TARGET_NAME="cpp_factory" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cpp_factory" RUN_TARGET_NAME="cpp_factory">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="libshape" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cpp_pluggable_factory" TARGET_NAME="libshape" CONFIG_NAME="Debug">
+    <configuration name="libbase" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cpp_factory" TARGET_NAME="libbase" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="CMake Application.cpp_pluggable_factory" />
-      <item itemvalue="CMake Application.libshape" />
+      <item itemvalue="CMake Application.cpp_factory" />
+      <item itemvalue="CMake Application.libbase" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -233,7 +175,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32868218" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32868218" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -302,10 +244,7 @@
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="665">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
@@ -321,8 +260,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="34" column="13" lean-forward="true" selection-start-line="14" selection-end-line="34" selection-end-column="13" />
+        <state relative-caret-position="703">
+          <caret line="37" column="12" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="12" />
         </state>
       </provider>
     </entry>
