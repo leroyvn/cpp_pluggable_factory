@@ -1,3 +1,4 @@
+#include <climits>
 //
 // Created by Vincent Leroy on 2019-06-16.
 //
@@ -11,12 +12,8 @@
 class CircleMaker : public ShapeMaker {
   private:
     CircleMaker() : ShapeMaker("Circle") {}
-
-    Shape* make_shape(std::istream& is) const override {
-        return new Circle();
-    }
-
-    static const CircleMaker register_this;
+    Shape* make_shape(std::istream& is) const override;
+    static const CircleMaker  __unused register_this;
 };
 
 #endif //CPP_PLUGGABLE_FACTORY_CIRCLEMAKER_H

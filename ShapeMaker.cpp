@@ -1,16 +1,17 @@
-//
-// Created by Vincent Leroy on 2019-06-16.
-//
-
 #include "ShapeMaker.h"
 
-ShapeMaker::ShapeMaker(std::string class_name) {
+// Register a new Maker
+ShapeMaker::ShapeMaker(const std::string& class_name) {
     registry.insert(std::make_pair(class_name, this));
 }
 
+// Create a concrete instance
 Shape *ShapeMaker::new_shape(std::istream &is) {
-    std::string className;
-    is >> className;
-    ShapeMaker *maker = (*registry.find(className)).second;
+    std::string class_name;
+    is >> class_name;
+    ShapeMaker *maker = (*registry.find(class_name)).second;
     return maker->make_shape(is);
 }
+
+// Initialise static members
+ShapeMaker::MakerMap ShapeMaker::registry;

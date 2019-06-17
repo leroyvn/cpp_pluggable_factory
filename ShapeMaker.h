@@ -1,7 +1,3 @@
-//
-// Created by Vincent Leroy on 2019-06-16.
-//
-
 #ifndef CPP_PLUGGABLE_FACTORY_SHAPEMAKER_H
 #define CPP_PLUGGABLE_FACTORY_SHAPEMAKER_H
 
@@ -12,14 +8,17 @@
 
 class ShapeMaker {
   public:
+    virtual ~ShapeMaker() = default;
     static Shape *new_shape(std::istream &is);
 
   protected:
-    typedef std::map<std::string, ShapeMaker *> MakerMap;
+    explicit ShapeMaker(const std::string& class_name) ;
     virtual Shape *make_shape(std::istream &is) const = 0;
-    static MakerMap registry;
 
-    explicit ShapeMaker(std::string class_name);
+  private:
+    typedef ShapeMaker *MakerPtr;
+    typedef std::map<std::string, MakerPtr> MakerMap;
+    static MakerMap registry; // Static init in cpp file
 };
 
 #endif //CPP_PLUGGABLE_FACTORY_SHAPEMAKER_H
